@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  border: 3px solid black;
+  border-radius: 8px;
+  margin: 1rem;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+form .botones,
+#title,
+#note {
+  border: none;
+  width: 90%;
+}
+
+form #note,
+.botones {
+  margin-top: 10px;
+}
+
+form #title {
+  height: 80px;
+}
+#title::placeholder,
+#note::placeholder {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+#title::placeholder {
+  font-size: larger;
+}
+
+#note::placeholder {
+  font-size: smaller;
+}
+main {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+
+.nota {
+  padding: 8px;
+  border-radius: 8px;
+  background: #6838ff;
+}
+
+.nota .nota-content {
+  margin-top: 8px;
+}
+
+.botones-nota {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.color,
+.delete {
+  border: none;
+  background: none;
+}
+
+.color:hover,
+#add:hover,
+.delete:hover {
+  filter: brightness(150%);
+}
+
+#add {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: none;
+  background-color: #42413e;
+  color: white;
+}
+
+input[type="color"] {
+  height: 15px;
+  width: 15px;
+  border: none;
+  background: none;
+}
